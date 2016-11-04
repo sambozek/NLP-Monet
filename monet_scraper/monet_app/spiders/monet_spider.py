@@ -11,5 +11,7 @@ class MonetSpider(BaseSpider):
     description_xpath = "//tr[@class='artwork-row']/td"
 
     artwork_fields = {
-    'title_year': "//td[@class='desc-col']/h4[@class='artwork-title']"
+    'title_year': "//td[@class='desc-col']/h4[@class='artwork-title']",
+    'Description': "//td[@class='desc-col']/p[@class='artwork-desc']"
     }
+
